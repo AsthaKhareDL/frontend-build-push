@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 const PORT = 3000;
-const BACKEND_URL = process.env.BACKEND_URL || 'http://backend:80';
+const backend_URL = process.env.backend_URL || 'http://backend:80';
 
 app.get('/', async (req, res) => {
   try {
