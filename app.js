@@ -14,7 +14,7 @@ app.get('/', async (req, res) => {
           <title>ECS Service Connect Demo</title>
         </head>
         <body>
-          <h1>Hello from Frontend!</h1>
+          <h1>Hello from Frontend- V2!</h1>
           <h2>Backend Response:</h2>
           <p>${data.message}</p>
         </body>
