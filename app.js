@@ -2,10 +2,11 @@ const express = require('express');
 
 const app = express();
 const PORT = 3000;
+const BACKEND_URL = process.env.BACKEND_URL || 'http://backend:80';
 
 app.get('/', async (req, res) => {
   try {
-    const response = await fetch('http://backend/');
+    const response = await fetch(backend_URL);
     const data = await response.json();
 
     res.send(`
